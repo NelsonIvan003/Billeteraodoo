@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id='gestion_pic_action' model='ir.actions.act_window'>
+        <field name="name">Gestión PIC</field>
+        
+        <!--
+        <field name="res_model">library.book</field>
+        
+        <field name="view_mode">tree,form</field>
+        -->
+    </record>
+
+    <menuitem name="Gestión PIC" id="gestion_pic_menu" />
+
+    
+</odoo>
