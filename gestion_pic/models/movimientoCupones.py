@@ -1,7 +1,7 @@
 from odoo import models, fields
 
 class movimientoCupones(models.Model):
-    _name = 'gestion_pic.movimientosCupones'
+    _name = 'gestion_pic.movimientoscupones'
     idMovimientoCupon = fields.Char('ID')
     detalleMovimiento = fields.Char('Detalle')
     idBanco = fields.Many2one('gestion_pic.bancos', 'bancos')

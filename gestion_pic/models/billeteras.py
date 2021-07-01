@@ -8,7 +8,7 @@ class billeteras(models.Model):
     nombreBilletera = fields.Char('Nombre Billetera')
     idCliente = fields.Many2one('gestion_pic.clientes','clientes')
     idComercio = fields.Many2many('gestion_pic.comercios','comercios')
-    idMediosDePagoAsociados = fields.Many2one('gestion_pic.mediosDePago', 'mediosDePago')
+    idMediosDePagoAsociados = fields.Many2one('gestion_pic.mediosdepago', 'mediosdepago')
     idOperacion = fields.Many2one('gestion_pic.operaciones', 'operaciones')
     estadoBilletera = fields.Char('Estado')
     fechaAlta = fields.Date('Fecha Alta')

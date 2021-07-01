@@ -6,7 +6,7 @@ class localidades(models.Model):
     codigo = fields.Char('Descripción')
     localidad = fields.Char('Localidad')
     zona = fields.Char('Zona')
-    codigoPostal = fields.Many2one('gestion_pic.codigoPostal','codigoPostal')
+    codigoPostal = fields.Many2one('gestion_pic.codigopostal','codigopostal')
     provincia = fields.Char('Provincia')
     pais = fields.Char('Pais')
     geo = fields.Char('Geo')
