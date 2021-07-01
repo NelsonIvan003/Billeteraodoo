@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id='gestion_pic_promociones_action' model='ir.actions.act_window'>
+        <field name="name">Promociones</field>
+        <field name="res_model">promociones</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem name="Promociones" id="gestion_pic_promociones_menu" parent="gestion_pic_menu" action="gestion_pic_promociones_action"/>
+
+
+    <!-- Form View
+    <record id="library_book_view_form" model="ir.ui.view">
+        <field name="name">Library Book Form</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="author_ids" widget="many2many_tags"/>
+                    </group>
+                    <group>
+                        <field name="short_name"/>
+                        <field name="date_release"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+    -->
+
+    <!-- Tree(list) View -->
+    <record id="gestion_pic_promociones_view_tree" model="ir.ui.view">
+        <field name="name">Listado de Promociones</field>
+        <field name="model">promociones</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- todo: agregar los campos que queremos mostrar en el listado de promociones -->
+                <field name="name"/>
+                <field name="date_release"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="gestion_pic_proociones_view_search" model="ir.ui.view">
+        <field name="name">Bucar promociones</field>
+        <field name="model">promociones</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- todo:  poner los campos por llos que se quire buscar de promociones-->
+                <field name="name"/>
+                <field name="author_ids"/>
+                <filter string="Without Authors" name="without_author" domain="[('author_ids','=',False)]"/>
+            </search>
+        </field>
+    </record>
+
+</odoo>
