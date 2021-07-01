@@ -3,7 +3,8 @@ from odoo import models, fields
 
 class comercios(models.Model):
     _name = 'gestion_pic.comercios'
-    id_comercio = fields.Char('Comercio',required=True)
+   # id_comercio = fields.Char('Comercios',required=True)
+    idComercio = fields.Char('Comercio',required=True)
     codigo = fields.Char('Codigo',required=True)
     cuit = fields.Char('Cuit', required= True)
     direccion = fields.Char('Direccion',required=True)

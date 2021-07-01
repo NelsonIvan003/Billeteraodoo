@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
-from . import comercio
-from . import bancos
-from . import contratoBancoComercio
 
-from . import codigoPostal
+
+from . import bancos
+from . import comercio
+
+
+
+
 from . import localidades
 from . import puntoDeVentas
 
@@ -18,4 +21,6 @@ from . import campana
 from . import tickets
 from . import operaciones
 
-from . import billeteras
+
+#from . import contratoBancoComercio (revisar mañana)
+#from . import billeteras (revisar mañana)
