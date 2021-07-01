@@ -16,5 +16,5 @@ class promociones(models.Model):
     horaInicio = fields.Datetime('Hora Inicio')
     fechaFin = fields.Date('Fecha Fin')
     horaFin = fields.Datetime('Hora Fin')
-    estado = fields.Boolean('Estado') 
+    estado = fields.Boolean('Estado')
 
