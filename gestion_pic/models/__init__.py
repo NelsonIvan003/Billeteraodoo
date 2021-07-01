@@ -1,14 +1,21 @@
 # -*- coding: utf-8 -*-
 from . import comercio
 from . import bancos
-from . import contrato_banco_comercio
-from . import localidad_codigo_postal
-from . import locacion
-from . import linea_caja
-from . import cliente
-from . import medios_de_pagos
-from . import tipo_operacion
-from . import promocion
+from . import contratoBancoComercio
+
+from . import codigoPostal
+from . import localidades
+from . import puntoDeVentas
+
+from . import clientes
+from . import mediosDePagos
+
+from . import tipoTipoOperacion
+from . import tipoOperacion
+
+from . import promociones
 from . import campana
-from . import tiket
-from . import  operacion
+from . import tickets
+from . import operaciones
+
+from . import billeteras
