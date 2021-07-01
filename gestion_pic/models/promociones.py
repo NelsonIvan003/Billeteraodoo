@@ -16,5 +16,5 @@ class promociones(models.Model):
     horaInicio = fields.Datetime('Hora Inicio')
     fechaFin = fields.Date('Fecha Fin')
     horaFin = fields.Datetime('Hora Fin')
-    estado = fields.Selection([('borrador','borrador'),('activo','activo'), ('desactivado','desactivado')]) #para mi va una enum hombre
+    estado = fields.Boolean('Estado') 
 
