@@ -18,6 +18,8 @@
     'auto_install': False,
     'data': [
             'views/gestion_pic.xml',
-            'views/promocion/promociones.xml',
+            'views/promociones/promociones.xml',
+            'views/comercios/comercios.xml',
+            'views/bancos/bancos.xml',
         ],
 }

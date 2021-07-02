@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id='gestion_pic_promociones_action' model='ir.actions.act_window'>
+        <field name="name">A</field>
+        <field name="res_model">gestion_pic.promociones</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem name="Promociones" id="gestion_pic_promociones_menu" parent="gestion_pic_menu" action="gestion_pic_promociones_action"/>
+
+</odoo>
