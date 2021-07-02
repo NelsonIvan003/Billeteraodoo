@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <record id='gestion_pic_action' model='ir.actions.act_window'>
         <field name="name">Gestión PIC</field>
         <field name="res_model">gestion_pic.promociones</field>
         <field name="view_mode">tree,form</field>
     </record>
-
     <menuitem name="Gestión PIC" id="gestion_pic_menu" action="gestion_pic_action"/>
-
-
 </odoo>

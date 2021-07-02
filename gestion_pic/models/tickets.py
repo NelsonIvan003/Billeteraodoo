@@ -8,6 +8,7 @@ class tickets(models.Model):
     idCliente = fields.Many2one('gestion_pic.clientes','clientes')
     fecha = fields.Date('Fecha')
     hora = fields.Datetime('Hora')
+
     idAdquirente = fields.Many2one('gestion_pic.adquirentes','adquirentes')
     domicilio = fields.Char('Direccion')
     nroComprobante = fields.Integer('Nro Comprobante')

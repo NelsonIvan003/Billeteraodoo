@@ -8,7 +8,7 @@ class movimientoCupones(models.Model):
     idComercio = fields.Many2one('gestion_pic.comercios', 'comercios')
     fecha = fields.Date('Fecha')
     hora = fields.Datetime('Hora')
-    idOperacion = fields.Many2one('gestion_pic.operaciones', 'operaciones')
+    idOperacion = fields.Many2one('analisis_pic.operaciones', 'operaciones')
     importeImpuesto = fields.Float('Importe Impuesto')
     fechaVenta = fields.Date('Fecha Venta')
     fechaCobro = fields.Date('Fecha Compra')
