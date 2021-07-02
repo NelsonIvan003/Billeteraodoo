@@ -17,4 +17,10 @@ class promociones(models.Model):
     fechaFin = fields.Date('Fecha Fin')
     horaFin = fields.Datetime('Hora Fin')
     estado = fields.Boolean('Estado')
+    #armar caso de uso
+    #listado de promociones
+    #crear promocion
+
+
+
 

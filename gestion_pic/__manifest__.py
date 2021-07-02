@@ -16,7 +16,8 @@
     'installable': True,
     'application': True,
     'auto_install': False,
-'data': [
-        'views/gestion_pic.xml',
-    ],
+    'data': [
+            'views/gestion_pic.xml',
+            'views/promocion/promociones.xml',
+        ],
 }
