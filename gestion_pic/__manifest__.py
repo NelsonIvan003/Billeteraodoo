@@ -21,5 +21,8 @@
             'views/promociones/promociones.xml',
             'views/comercios/comercios.xml',
             'views/bancos/bancos.xml',
+            'views/adquirentes/adquirentes.xml',
+            'views/clientes/clientes.xml',
+            'views/cupones/cupones.xml',
         ],
 }

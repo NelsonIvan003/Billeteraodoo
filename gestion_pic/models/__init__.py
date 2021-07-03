@@ -8,6 +8,8 @@ from . import mediosDePagos
 from . import promociones
 from . import campana
 from . import tickets
+from . import adquirentes
+from . import cupones
 
 
 #from . import contratoBancoComercio (revisar mañana)
