@@ -3,7 +3,7 @@
 {
     'name': 'Configuración PIC',
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base','gestion_pic'],
     'summary': """
     Configuración del Gateway
     """,

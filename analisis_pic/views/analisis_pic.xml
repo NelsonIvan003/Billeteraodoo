@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id='gestion_pic_action' model='ir.actions.act_window'>
+        <field name="name">Analisis PIC</field>
+        <field name="res_model">analisis_pic.operaciones</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Analisis PIC" id="gestion_pic_menu" action="gestion_pic_action"/>
+</odoo>
