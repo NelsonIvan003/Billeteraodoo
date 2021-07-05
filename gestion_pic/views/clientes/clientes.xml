@@ -6,6 +6,87 @@
         <field name="res_model">gestion_pic.clientes</field>
         <field name="view_mode">tree,form</field>
     </record>
-    <menuitem name="Clientes" id="gestion_pic_clientes_menu" parent="gestion_pic_menu" action="gestion_pic_clientes_action"/>
+
+    <menuitem name="Gestion de Clientes" id="gestion_pic_clientes_menu" parent="gestion_pic_menu" action="gestion_pic_clientes_action"/>
+
+    <!-- Form View -->
+    <record id="clientes_view_form" model="ir.ui.view">
+        <field name="name">Crear Cliente</field>
+        <field name="model">gestion_pic.clientes</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="idCliente"/>
+                            <field name="codigo"/>
+                            <field name="apellido"/>
+                            <field name="nombre"/>
+                            <field name="huella"/>
+                            <field name="domicilio"/>
+                            <field name="localidad"/>
+                            <field name="dni"/>
+                            <field name="fechaNacimiento"/>
+                        </group>
+                        <group>
+                            <field name="cbu"/>
+                            <field name="cvu"/>
+                            <field name="telefono"/>
+                            <field name="email"/>
+                            <field name="facebook"/>
+                            <field name="instagram"/>
+                            <field name="sexo"/>
+                            <field name="genero"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- end form -->
+
+    <!-- Tree View -->
+     <record id="clientes_view_tree" model="ir.ui.view">
+        <field name="name">Lista de Clientes</field>
+        <field name="model">gestion_pic.clientes</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="idCliente"/>
+                <field name="codigo"/>
+                <field name="apellido"/>
+                <field name="nombre"/>
+                <field name="huella"/>
+                <field name="domicilio"/>
+                <field name="localidad"/>
+                <field name="dni"/>
+                <field name="fechaNacimiento"/>
+                <field name="cbu"/>
+                <field name="cvu"/>
+                <field name="telefono"/>
+                <field name="email"/>
+                <field name="facebook"/>
+                <field name="instagram"/>
+                <field name="sexo"/>
+                <field name="genero"/>
+            </tree>
+        </field>
+    </record>
+    <!--fin tree-->
+
+    <!-- inicio search -->
+     <record id="clientes_view_search" model="ir.ui.view">
+        <field name="name">Buscar Clientes</field>
+        <field name="model">gestion_pic.clientes</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="apellido"/>
+                <field name="sexo"/>
+                <field name="dni"/>
+                <field name="localidad"/>
+<!--        Evaluar la necesidad de filtros extras...-->
+            </search>
+        </field>
+    </record>
+    <!-- fin search -->
 
 </odoo>
