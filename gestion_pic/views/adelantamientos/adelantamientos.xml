@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <data>
 
-    <record id='gestion_pic_cupones_action' model='ir.actions.act_window'>
-        <field name="name">Cupones</field>
-        <field name="res_model">gestion_pic.cupones</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+        <record id='gestion_pic_adelantamientos_action' model='ir.actions.act_window'>
+            <field name="name">Adelantamientos</field>
+            <field name="res_model">gestion_pic.cupones</field>
+            <field name="view_mode">tree,form</field>
+        </record>
 
-    <menuitem name="Gestión de Cupones"
-              id="gestion_pic_cupones_menu"
-              parent="gestion_pic_menu"
-    />
+        <menuitem name="Gestion de Adelantamientos"
+                  id="gestion_pic_promociones_menu"
+                  parent="gestion_pic_cupones_menu"
+                  action="gestion_pic_adelantamientos_action"/>
 
-    <!-- sub menú -->
-        <!-- editar cupones -->
-    <menuitem name="Editar Cupones"
-              id="gestion_pic_cupones_editar_cupones"
-              parent="gestion_pic_cupones_menu"
-              action="gestion_pic_cupones_action"
-    />
 
-<!-- Form View -->
+        <!-- Form View -->
     <record id="cupones_view_form" model="ir.ui.view">
         <field name="name">Crear Cupón</field>
         <field name="model">gestion_pic.cupones</field>
@@ -83,4 +77,6 @@
     <!-- fin search -->
 
 
+
+    </data>
 </odoo>

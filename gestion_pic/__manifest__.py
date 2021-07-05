@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 {
     'name': 'Gestion PIC',
     'version': '1.0',
@@ -24,5 +25,7 @@
             'views/adquirentes/adquirentes.xml',
             'views/clientes/clientes.xml',
             'views/cupones/cupones.xml',
+            'views/contratos/contratos.xml',
+            'views/adelantamientos/adelantamientos.xml',
         ],
 }
