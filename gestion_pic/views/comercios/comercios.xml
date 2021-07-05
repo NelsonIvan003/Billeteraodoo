@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id='gestion_pic_comercios_action' model='ir.actions.act_window'>
+        <field name="name">Comercios</field>
+        <field name="res_model">gestion_pic.comercios</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Gestion de Comercios" id="gestion_pic_comercio_menu" parent="gestion_pic_menu" action="gestion_pic_comercios_action"/>
+
+    <!-- Form View -->
+    <record id="comercios_view_form" model="ir.ui.view">
+        <field name="name">Crear Comercio</field>
+        <field name="model">gestion_pic.comercios</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="idComercio"/>
+                            <field name="codigo"/>
+                            <field name="cuit"/>
+                            <field name="sucursal"/>
+                        </group>
+                        <group>
+                            <field name="direccion"/>
+                            <field name="telefono"/>
+                            <field name="tipo"/>
+                            <field name="idBancoPagador" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- end form -->
+
+        <!-- Tree View -->
+     <record id="comercios_view_tree" model="ir.ui.view">
+        <field name="name">Lista de Comercios</field>
+        <field name="model">gestion_pic.comercios</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="idComercio"/>
+                <field name="codigo"/>
+                <field name="cuit"/>
+                <field name="direccion"/>
+                <field name="telefono"/>
+                <field name="tipo"/>
+                <field name="sucursal"/>
+                <field name="idBancoPagador"/>
+            </tree>
+        </field>
+    </record>
+    <!--fin tree-->
+
+    <!-- inicio search -->
+     <record id="comercios_view_search" model="ir.ui.view">
+        <field name="name">Buscar Comercios</field>
+        <field name="model">gestion_pic.comercios</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="idComercio"/>
+                <field name="sucursal"/>
+<!--                 Evaluar la necesidad de filtros...-->
+            </search>
+        </field>
+    </record>
+    <!-- fin search -->
+
+
+</odoo>

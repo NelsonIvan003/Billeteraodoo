@@ -6,7 +6,7 @@ class comercios(models.Model):
    # id_comercio = fields.Char('Comercios',required=True)
     idComercio = fields.Char('Comercio',required=True)
     codigo = fields.Char('Codigo',required=True)
-    cuit = fields.Char('Cuit', required= True)
+    cuit = fields.Char('Cuit', required=True)
     direccion = fields.Char('Direccion',required=True)
     telefono = fields.Char('Teléfono',required=True)
     tipo = fields.Char('Tipo',required=True)

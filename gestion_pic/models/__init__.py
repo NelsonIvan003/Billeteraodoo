@@ -5,12 +5,11 @@ from . import localidades
 from . import puntoDeVentas
 from . import clientes
 from . import mediosDePagos
-from . import tipoTipoOperacion
-from . import tipoOperacion
 from . import promociones
 from . import campana
 from . import tickets
-from . import operaciones
+from . import adquirentes
+from . import cupones
 
 
 #from . import contratoBancoComercio (revisar mañana)

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id='gestion_pic_promociones_action' model='ir.actions.act_window'>
+        <field name="name">Promociones</field>
+        <field name="res_model">gestion_pic.promociones</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Gestion de Promociones" id="gestion_pic_promociones_menu" parent="gestion_pic_menu" action="gestion_pic_promociones_action"/>
+
+    <!-- Form View -->
+    <record id="promociones_view_form" model="ir.ui.view">
+        <field name="name">Crear Promoción</field>
+        <field name="model">gestion_pic.promociones</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="promocion"/>
+                            <field name="idComercio" widget="many2many_tags"/>
+                            <field name="porcentajeDescuento"/>
+                        </group>
+                        <group>
+                            <field name="fechaInicio"/>
+                            <field name="fechaFin"/>
+                            <field name="estado"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="piezaPublicitariaTexto"/>
+                        <field name="piezaPublicitariaImagen"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- end form -->
+
+    <!-- Tree View -->
+     <record id="promociones_view_tree" model="ir.ui.view">
+        <field name="name">Lista de Promociones</field>
+        <field name="model">gestion_pic.promociones</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="promocion"/>
+                <field name="idComercio"/>
+                <field name="porcentajeDescuento"/>
+                <field name="fechaInicio"/>
+                <field name="horaInicio"/>
+                <field name="fechaFin"/>
+                <field name="horaFin"/>
+                <field name="piezaPublicitariaTexto"/>
+                <field name="piezaPublicitariaImagen"/>
+                <field name="estado"/>
+            </tree>
+        </field>
+    </record>
+    <!--fin tree-->
+
+    <!-- inicio search -->
+     <record id="promociones_view_search" model="ir.ui.view">
+        <field name="name">Buscar Promociones</field>
+        <field name="model">gestion_pic.promociones</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="promocion"/>
+                <field name="porcentajeDescuento"/>
+<!--                 Evaluar un filtro como el ejemplo de sin autor...-->
+            </search>
+        </field>
+    </record>
+    <!-- fin search -->
+
+</odoo>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id='gestion_pic_adquirentes_action' model='ir.actions.act_window'>
+        <field name="name">Adquirentes</field>
+        <field name="res_model">gestion_pic.adquirentes</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Gestion de Adquirentes" id="gestion_pic_adquirentes_menu" parent="gestion_pic_menu" action="gestion_pic_adquirentes_action"/>
+
+    <!-- Form View -->
+    <record id="adquirentes_view_form" model="ir.ui.view">
+        <field name="name">Crear Adquirente</field>
+        <field name="model">gestion_pic.adquirentes</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="idAdquirente"/>
+                        <field name="adquirente"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- end form -->
+
+    <!-- Tree View -->
+     <record id="adquirentes_view_tree" model="ir.ui.view">
+        <field name="name">Lista de Adquirentes</field>
+        <field name="model">gestion_pic.adquirentes</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="idAdquirente"/>
+                <field name="adquirente"/>
+            </tree>
+        </field>
+    </record>
+    <!--fin tree-->
+
+    <!-- inicio search -->
+     <record id="adquirentes_view_search" model="ir.ui.view">
+        <field name="name">Buscar Adquirentes</field>
+        <field name="model">gestion_pic.adquirentes</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="idAdquirente"/>
+                <field name="adquirente"/>
+<!--                 Evaluar la necesidad de mas filtros sobre los adquirentes...-->
+            </search>
+        </field>
+    </record>
+    <!-- fin search -->
+
+</odoo>
